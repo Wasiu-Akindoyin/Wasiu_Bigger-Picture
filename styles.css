@@ -1,0 +1,212 @@
+/* BODY STYLING STARTS HERE*/
+body{
+      background: lightgrey;
+      color: black;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      line-height: 1.6em;
+      margin: 0;
+      box-sizing: border-box;
+      min-height: 100vh;
+}
+
+/* HEADER STYLING STARTS HERE */
+.container{
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+}
+
+#main-header{
+      background: #664b00;
+      color: white;
+      font-family: 'PT Serif Caption', serif;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 2px;
+      margin: 0.5%;
+      font-size: 20px;
+}
+
+/* NAVBAR STYLING STARTS HERE*/
+#main-navbar{
+      background-color: darkgray;
+      margin: 0.3%;
+}
+
+#main-navbar ul{
+      padding: 0;
+      display: flex;
+      right: 50px;
+      justify-content: center;
+}
+
+#main-navbar ul li{
+      display: inline-block;
+      padding-right: 15px;
+}
+
+#main-navbar ul li a{
+      text-decoration: none;
+      font-family: 'Acme', sans-serif;
+      text-transform: uppercase;
+      font-size: 16px;
+      letter-spacing:1.5px;
+      color: white;
+      align-items: center;
+      transition: all .5s ease;
+      padding: 10px;
+}
+
+#main-navbar ul li a:hover{
+      color: white;
+      transition: 1s ease-in-out;
+      background-color: #664b00;
+      box-shadow: 0 0 10px white;
+      border-radius: 5px;
+}
+
+#main-navbar ul li a:after{
+      color: blue;
+      transition: 1s ease-in-out;
+}
+
+/* SHOWCASE STYLING STARTS HERE */
+#showcase{
+      background: black;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      min-height: 300px;
+      text-align: justify;
+}
+
+#showcase h1{
+      line-height: 1.6em;
+      padding-top: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: 'PT Serif Caption', serif;
+} 
+
+/* MAIN STYLING STARTS HERE */
+#main{
+      float: left;
+      width: 74%;
+      font-size: 20px;
+      line-height: 35px;
+      padding: 10px 30px;
+      box-sizing: border-box;
+      font-weight: bold;
+      border-radius: 5px;
+      text-align: justify;
+      color: white;
+      background-color: #664b00;
+      margin: 20px 10px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* MAIN HEADER STYLING STARTS HERE */
+#main h1{
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      font-size: 40px;
+      letter-spacing: 2px;
+      text-decoration: underline;
+      font-family: 'PT Serif Caption', serif;
+}
+
+/* SIDEBAR STYLING STARTS HERE */
+#sidebar{
+      float: right;
+      width: 16%;
+      font-size: 18px;
+      text-align: initial;
+      background: rgb(34, 32, 32);
+      border-radius: 5px;
+      margin: 20px 10px;
+      color: white;
+      font-family: monospace;
+      font-weight: bold;
+      padding: 5px 25px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* FOOTER STYLING STARTS HERE */
+#main-footer{
+      text-align: center;
+      font-size: 16px;
+      font-family: 'PT Serif Caption', serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: white;
+      font-weight: bold;
+      background-color: #664b00;
+      padding: 3px 3px;
+      margin: 10px 5px;
+}
+
+/* MEDIA QUERY STYLING STARTS HERE */
+@media screen and (max-width: 600px) {
+      body{
+            height: auto;
+      }
+      
+      #main-header{
+            background: blue;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0.5%;
+            font-size: 8px;
+      }
+
+      #main-navbar ul li a{
+            text-decoration: none;
+            font-size: 12px;
+            color: white;
+      }
+
+      #showcase{
+            font-size: 12px;
+            color: white;
+            min-height: 300px;
+            text-align: center;
+      }
+      
+      #main{
+            float: none;
+            width: 100%;
+            padding: 10px 30px;
+            box-sizing: border-box;
+            color: blue;
+            background-color: white;
+            margin: 10px;
+      
+      }
+      
+      #sidebar{
+            float: none;
+            width: 100%;
+            background: darkgrey;
+            margin: 10px;
+            color: white;
+            font-family: monospace;
+            text-align: center;
+            font-size: 12px;
+      }
+
+      #main-footer{
+            text-align: center;
+            font-size: 12px;
+            font-family: monospace;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+            background-color: blue;
+            padding: 5px;
+            margin: 10px 5px;
+      }
+}
